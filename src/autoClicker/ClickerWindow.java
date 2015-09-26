@@ -117,7 +117,7 @@ public class ClickerWindow extends JFrame {
 		//delay input
 		JTextPane delay = new JTextPane();
 		delay.setBounds(254, 273, 61, 27);
-		delay.setText("0");
+		delay.setText("28");
 		contentPane.add(delay);
 		
 		//logic for the "start clicking" button
@@ -139,6 +139,7 @@ public class ClickerWindow extends JFrame {
 				//minimum delay time is 28 ms
 				if(delayTime<28){
 					delayTime = 28;
+					delay.setText("28");
 				}
 				//does all the clicks
 				clicks.setEditable(false);
@@ -238,6 +239,7 @@ public class ClickerWindow extends JFrame {
 				int delayTime = Integer.parseInt(delay.getText());
 				if(delayTime<28){
 					delayTime = 28;
+					delay.setText("28");
 				}
 				//does all the clicks
 				clicks.setEditable(false);
