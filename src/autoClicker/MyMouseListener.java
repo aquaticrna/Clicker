@@ -10,7 +10,6 @@ import java.awt.event.MouseMotionListener;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
@@ -19,7 +18,7 @@ import javax.swing.Timer;
  * informs all registered MouseMotionListeners about position updates.
  */
 public class MyMouseListener {
-    // the resolution of the mouse motion
+    /* the resolution of the mouse motion */
     private static final int DELAY = 10;
 
     private Component component;
